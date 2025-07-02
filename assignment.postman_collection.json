@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "5076e81d-b0f9-4049-b4a9-eb1ce8a99a82",
+		"name": "assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44772032"
+	},
+	"item": [
+		{
+			"name": "getSchools",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://node-js-assignment-lmtt.onrender.com/api/listSchools?latitude=11.9716&longitude=75.5946",
+					"protocol": "https",
+					"host": [
+						"node-js-assignment-lmtt",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"listSchools"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "11.9716"
+						},
+						{
+							"key": "longitude",
+							"value": "75.5946"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postSchools",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Assignment Boarding School\",\n    \"address\":\"London, 5600\",\n    \"latitude\":\"22.76\",\n    \"longitude\":\"77\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://node-js-assignment-lmtt.onrender.com/api/addSchool",
+					"protocol": "https",
+					"host": [
+						"node-js-assignment-lmtt",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"addSchool"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
