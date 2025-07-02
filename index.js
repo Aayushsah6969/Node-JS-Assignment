@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 
-app.use(bodyParser.json());  // Using the json middleware directly
+app.use(bodyParser.json());  
 
 app.use('/api', schoolRoutes);
 
